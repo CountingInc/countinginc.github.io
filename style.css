@@ -1,11 +1,20 @@
 html {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-.christmas {
-    background-image: url("img/christmas-bg.webp");
-    color: white;
+.countdown-container {
+    text-align: center;
 }
-.christmas-countdown {
-    font-size: 15px;
+
+#countdown {
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.time {
+    margin: 0 10px;
+    padding: 20px;
+    background: #ffcc00;
+    border-radius: 10px;
+    font-size: 2em;
 }
