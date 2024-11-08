@@ -3,4 +3,5 @@ html {
 }
 .christmas {
     background-image: url("img/christmas-bg.webp");
+    color: white;
 }
