@@ -5,3 +5,7 @@ html {
     background-image: url("img/christmas-bg.webp");
     color: white;
 }
+.christmas-countdown {
+    font-size: 15px;
+    display: flex;
+}
