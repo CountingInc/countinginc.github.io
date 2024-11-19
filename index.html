@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Countdown</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: #00c6ff;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 3em;
+        }
+        .button-container {
+            margin-top: 40px;
+        }
+        .countdown-button {
+            display: block;
+            width: 200px;
+            margin: 15px auto;
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: #ff5722;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .countdown-button:hover {
+            background-color: #e64a19;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Countdown</h1>
+    <div class="button-container">
+        <button class="countdown-button" onclick="redirectTo('christmas')">🎄 Christmas Countdown</button>
+        <button class="countdown-button" onclick="redirectTo('newyear')">🎉 New Year Countdown</button>
+        <button class="countdown-button" onclick="redirectTo('custom')">⚙️ Custom Countdown</button>
+    </div>
+    <footer>
+        <p>Copyright (c) 2024</p>
+    </footer>
+
+    <script>
+        function redirectTo(countdownType) {
+            const urls = {
+                christmas: 'https://countinginc.github.io/christmas/',
+                newyear: 'https://countinginc.github.io/newyear/',
+                custom: 'https://countinginc.github.io/custom/'
+            };
+
+            const url = urls[countdownType];
+            if (url) {
+                window.location.href = url;
+            } else {
+                alert("Invalid countdown type!");
+            }
+        }
+    </script>
+</body>
+</html>
